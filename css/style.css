@@ -1,0 +1,534 @@
+body{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #d8d4d4;
+}
+
+/* Global */
+.container{
+    width: 80%;
+    margin: auto;
+    overflow:hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.button_1{
+    background: rgb(165, 13, 63);
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.button_2{
+    height: 38px;
+    background: rgb(165, 13, 63);
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 20px;
+    font-family: gamename;
+}
+
+.dark{
+    padding: 15px;
+    padding-left: 20px;
+    background: rgb(71, 71, 71);
+    color: white;
+    margin: 20px;
+    margin-bottom: 20px;
+}
+
+.border{
+    background: white;
+    border: rgb(165, 13, 63) solid 2px;
+    border-radius: 15px;
+    margin: 20px;
+    overflow: auto;
+}
+
+#library{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Fonts */
+@font-face{
+    font-family: myname;
+    src: url('../fonts/Dulcelin.otf');
+}
+
+@font-face{
+    font-family: gamename;
+    src: url('../fonts/Gorditas-Regular.ttf');
+}
+
+@font-face{
+    font-family: bookname;
+    src: url('../fonts/Precious.ttf');
+}
+
+/* Header */
+header{
+    background: url('../img/background.jpg');
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: rgb(136, 169, 180) 3px solid;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+header li{
+    display: inline;
+    padding: 5px 20px 5px 20px;
+    float: left;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+    font-size: 25px;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px
+}
+
+header .highlight {
+    color: khaki;
+    font-weight: bold;
+}
+
+.current a{
+    color: rgb(136, 169, 180);
+    font-weight: bold;
+}
+
+header a:hover{
+    color: grey;
+    font-weight: bold;
+}
+
+/* Showcase */
+#showcase{
+    height: 400px;
+    width: 100%;
+    background-image: url('../img/showcase.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom 0px right 0px;
+    text-align: center;
+    color: white;
+    border-bottom: rgb(136, 169, 180) 3px solid;
+    display: table;
+}
+
+#showcase .container{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#showcase h1{
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase .signature{
+    font-family: myname;
+    font-size: 20px;
+}
+
+/* Updates */
+#updates{
+    padding: 15px;
+    color: white;
+    background: url('../img/background.jpg') 0 -500px ;
+}
+
+#updates h1{
+    float: left;
+}
+
+#updates form{
+    float: right;
+    margin-top: 15px;
+}
+
+#updates input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/* Boxes */
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 27%;
+    padding: 14px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#boxes .box img{
+    height: 90px;
+}
+
+/* Sidebar */
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+aside#sidebar .comment input, aside#sidebar .comment textarea{
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* AboutMe-Main */
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
+/* Global for Explore */
+#explore button{
+    float: right;
+    border-radius: 10px;
+    margin-top:12px;
+}
+
+#explore li p{
+    padding: 20px;
+    background: white;
+}
+
+#explore li h3{
+    float: left;
+    margin: 0;
+    border-radius: 10px;
+    width: 176px;
+    padding: 8px;
+    height: 30px;
+}
+
+#explore .img{
+    height: 80px;
+}
+
+#explore .btm_img{
+    height: 45px;
+}
+
+/* Explore */
+.border#games{
+    background: url("../img/gamesbg.png") no-repeat 0 0/cover;
+    background-position: right bottom;
+}
+
+.border#books{
+    background: url("../img/booksbg.jpg") no-repeat 0 0/cover;
+    background-position: right bottom;
+}
+
+.border#blog{
+    background: url("../img/blogbg.png") no-repeat 0 0/cover;
+    background-position: right bottom;
+}
+
+.border#covers{
+    background: url("../img/coversbg.jpg") no-repeat 0 0/cover;
+    background-position: right bottom;
+}
+
+.border#art{
+    background: url("../img/artbg.png") no-repeat 0 0/cover;
+    background-position: right top;
+}
+
+.border#photog{
+    background: url("../img/photogbg.png") no-repeat 0 0/cover;
+    background-position: left top;
+}
+
+.border#music{
+    background: url("../img/musicbg.png") no-repeat 0 0/cover;
+    background-position: left top;
+}
+
+.border#dance{
+    background: url("../img/dancebg.png") no-repeat 0 0/cover;
+    background-position: right bottom;
+}
+
+/* Global for Games */
+#boxes .game h3, .main-game h1{
+    font-family:  gamename;
+    color: yellow;
+    text-shadow: -3px 0 brown, 0 3px brown, 3px 0 brown, 0 -3px brown;
+}
+
+#boxes .game h3{
+    position: relative;
+    top: 60px;
+}
+
+#game-canvas{
+     margin: 20px;
+} 
+
+article.main-game{
+    width: 60%;
+    float: left;
+}
+
+#boxes .game{
+    border: rgb(165, 13, 63) solid 2px;
+    border-radius: 25px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding: 20px;
+    float: left;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+article.main-game h1{
+    font-size: 40px;
+    letter-spacing: 5px;
+    margin-left: 30px;
+}
+
+article.main-game p{
+    margin: 0 auto;
+    margin-left: 10%;
+    float: left;
+}
+
+#boxes a{
+    text-decoration: none;
+}
+
+#adjust-volume{
+    margin-right: 10%;
+    float: right;
+}
+
+#sound{
+    padding: 10px;
+}
+
+#sidebar img{
+    float: right;
+    max-width: 40%;
+    max-height: 80px;
+    margin: 0 auto;
+}
+
+/* Games */
+
+#boxes #frogger{
+    background: url('../img/frogger.png'), url('../img/froggerbg.png'), url('../img/lake.jpg');
+    background-repeat: no-repeat;
+    background-size: 100px, 200px, 250px;
+}
+
+#frogger-main{
+    background: url('../img/froggerbg.png') repeat -30px -30px;
+    background-size: 300px;
+    width: 100%;
+}
+
+#boxes #snake{
+    background: url('../img/snake.png'), url('../img/fullgrass.jpg');
+    background-repeat: no-repeat;
+    background-size: 140px, 200px;
+}
+
+#snake-main{
+    background: url('../img/snakebg.png') repeat -30px -30px;
+    background-size: 300px;
+    width: 100%;
+}
+
+/* Books */
+.current{
+    color: rgb(69, 116, 133);
+    font-weight: bold;
+}
+
+.book img{
+    height: 250px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+}
+
+.aside{
+    float: left;
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+.side-contents{
+    background: lightgray;
+    color: black;    
+    text-align: center;
+    margin-top: 30px;
+}
+
+.side-contents ul{
+    list-style: none;
+    border: grey solid 1px;
+    background: rgb(228, 228, 228);
+    margin: 10px;
+}
+
+.side-contents li{
+    border: grey solid 1px;
+    padding: 5px;
+}
+
+.side-contents a:hover{
+    color: rgb(105, 104, 104);
+    font-weight: bold;
+}
+
+.side-contents a{
+    color: inherit;
+}
+
+.side-contents h3{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: bookname;
+    font-size: 25px;
+
+}
+
+.aside img{
+    width: 100%;
+    margin: 20px auto;
+}
+
+article#book-summary{
+    float: right;
+    width: 70%;
+}
+
+footer{
+    padding: 20px;
+    color: white;
+    background: url('../img/background.jpg')  0 -1000px ;
+    text-align: center;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+    header #branding, header nav, header nav li,
+    #updates h1, #updates form,
+    article#main-col, aside#sidebar,
+    article.main-game, .aside, article#book-summary{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .container{
+        width: 90%;
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+
+    header li{
+        padding: 5px 10px 5px 10px;
+    }
+
+    #showcase{
+        background-position: center;
+    }
+
+    #showcase h1{
+        font-size: 40px;
+    }
+
+    #boxes .box{
+        float: none;
+        margin: 0px;
+        width: 90%;
+    }
+
+    .button_1{
+        width: 90%;
+        text-align: center;
+        float: none;
+    }
+
+    #updates form input[type="email"]{
+        margin-bottom: 10px;
+        width: 90%;
+    }
+
+    .border{
+        float: none;
+    }
+    
+    #explore li h3{
+        padding-left: 0;
+    }
+
+    article.main-game p, #adjust-volume{
+        margin: 0 auto;
+        float: none;
+    }
+
+    #boxes .game, #boxes img{
+        float: none;
+        margin: 20px auto;
+        display:block;
+    }
+
+    #library button{
+        font-size: 15px;
+    }
+
+    .aside img{
+        max-width: 300px;
+    }
+
+}
